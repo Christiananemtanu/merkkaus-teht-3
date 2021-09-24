@@ -1,12 +1,21 @@
-.body {
+body {
   background-color: #565656 ;
 }
+
 #kehys {
-flex-direction: column;
-justify-content: center;
-background-color: #ffff;
-width: 300px;
-border: 15px #f23b24;
-padding: 50px;
-margin: 20px;
+  border-radius: 25px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffff;
+  width: 700px;
+  border-top: 10px solid #f23b24 ;
+  padding: 50px;
+  margin-left: 22%;
+}
+
+#tausta {
+  background-image: url("kuvat/kuvitus.jpg");
+}
+
+#h1 {
 }
