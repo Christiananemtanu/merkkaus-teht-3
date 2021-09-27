@@ -3,19 +3,89 @@ body {
 }
 
 #kehys {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header header header"
+    "firsth2 firsth2 firsth2"
+    "paragraph paragraph paragraph"
+    "secondh2 secondh2 secondh2"
+    "body body body"
+    "img1 img2 img3";
+}
+
+header {
+  grid-area: header;
+}
+
+h2:first-of-type {
+  grid-area: firsth2;
+}
+
+p:first-of-type {
+  grid-area: paragraph;
+}
+
+h2:last-of-type {
+  grid-area: secondh2;
+}
+
+
+#kehys {
   border-radius: 25px;
   flex-direction: column;
   justify-content: center;
   background-color: #ffff;
-  width: 700px;
-  border-top: 10px solid #f23b24 ;
-  padding: 50px;
-  margin-left: 22%;
+  border-top: 10px solid #f23b24;
+  box-sizing: border-box;
+  margin: 200px;
 }
 
 #tausta {
-  background-image: url("kuvat/kuvitus.jpg");
+  background-image: url('../kuvat/kuvitus.jpg');
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  height: 280px;
+  margin: 30px;
+  margin-top: 40px;
 }
 
-#h1 {
+h1 {
+  background-color: #e9db7f;
+  color: #515151;
+  opacity: .6;
+  padding-left: 15px;
 }
+
+h2 {
+  color: #c5b546;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 30px;
+}
+
+.p {
+  font-family: Arial black, Helvetica, sans-serif;
+  padding-left: 30px;
+}
+
+
+.kuvan_kehys_vasen {
+  padding: 5px;
+  grid-area: img1;
+}
+
+.kuvan_kehys_keski {
+  padding: 5px;
+  grid-area: img2;
+  
+}
+
+.kuvan_kehys_oikea {
+  padding: 5px;
+  grid-area: img3;
+
+}
+
+
+
