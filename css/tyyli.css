@@ -40,6 +40,8 @@ h2:last-of-type {
   border-top: 10px solid #f23b24;
   box-sizing: border-box;
   margin: 200px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 #tausta {
@@ -52,8 +54,8 @@ h2:last-of-type {
 }
 
 h1 {
-  background-color: #e9db7f;
-  color: #515151;
+  background-color: #ded074;
+  color: #525252;
   opacity: .6;
   padding-left: 15px;
 }
@@ -73,11 +75,13 @@ h2 {
 .kuvan_kehys_vasen {
   padding: 5px;
   grid-area: img1;
+  border-right: 1px dotted;
 }
 
 .kuvan_kehys_keski {
   padding: 5px;
   grid-area: img2;
+  border-right: 1px dotted;
   
 }
 
